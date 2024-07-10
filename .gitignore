@@ -24,3 +24,8 @@ package-lock.json
 # Misc
 _sass/dist
 assets/js/dist
+
+# My folder
+_disabled_plugins
+_disabled_tabs
+_drafts

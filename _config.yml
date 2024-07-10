@@ -1,11 +1,8 @@
-# The Site Configuration
-
-# Import the theme
+# Импортируйте тему
 theme: jekyll-theme-chirpy
-
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
+# Язык веб-страницы ' http://www.lingoes.net/en/translator/langcode.htm
+# Если он совпадает с именем одного из файлов в папке `_data/locales`, язык макета также будет изменен,
+# в противном случае язык макета будет использовать значение по умолчанию 'en'.
 lang: ru-RU
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
@@ -15,12 +12,9 @@ timezone: Europe/Moscow
 # ↓ --------------------------
 
 title: Олег Казанин # the main title
-
-tagline: Добро пожаловать в мой блог! Здесь я делюсь своими знаниями и опытом в сфере ИТ-технологий, включая проекты и методы решения проблем. Спасибо за ваш визит! # it will display as the sub-title
-
-description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
-
+tagline: Добро пожаловать в мой блог! Здесь я делюсь своими знаниями и опытом в сфере ИТ-технологий, разбираю свои проекты, решаю проблемы. Спасибо за ваш визит! # it will display as the sub-title
+description: Добро пожаловать в мой блог! Здесь я делюсь своими знаниями и опытом в сфере ИТ-технологий, разбираю свои проекты, решаю проблемы. Спасибо за ваш визит!
+author: Олег Казанин
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
 url: ""
@@ -41,11 +35,7 @@ social:
 # Site Verification Settings
 webmaster_verifications:
   google: # fill in your Google verification code
-  bing: # fill in your Bing verification code
-  alexa: # fill in your Alexa verification code
   yandex: # fill in your Yandex verification code
-  baidu: # fill in your Baidu verification code
-  facebook: # fill in your Facebook verification code
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
@@ -54,14 +44,6 @@ webmaster_verifications:
 analytics:
   google:
     id: # fill in your Google Analytics ID
-  goatcounter:
-    id: # fill in your GoatCounter ID
-  umami:
-    id: # fill in your Umami ID
-    domain: # fill in your Umami domain
-  matomo:
-    id: # fill in your Matomo ID
-    domain: # fill in your Matomo domain
   cloudflare:
     id: # fill in your Cloudflare Web Analytics token
 
@@ -69,28 +51,18 @@ analytics:
 pageviews:
   provider: # now only supports 'goatcounter'
 
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light  - Use the light color scheme
-#     dark   - Use the dark color scheme
-#
+# Предпочтительная настройка цветовой схемы.
 theme_mode: # [light | dark]
 
-# The CDN endpoint for media resources.
-# Notice that once it is assigned, the CDN url
-# will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
+# Конечная точка CDN для медиаресурсов.
+# Обратите внимание, что после присвоения этого адреса CDN url
+# будет добавлен ко всем медиаресурсам (аватар сайта, изображения постов, аудио- и видеофайлы), путь к которым начинается с '/'.
 #
 # e.g. 'https://cdn.com'
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: assets/img/avatar_bw.webp
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -219,3 +191,28 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+# ------------ My settings ------------------
+plugins:
+  - jekyll-seo-tag
+
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      description:
+      image:
+      category:
+      tags:
+    posts:
+      description:
+      image:
+      category:
+      tags:
+      published: false
+      sitemap: false
+
+
+permalink: /:categories/:title/
+
+# не публиковать посты, указанное время которых позднее времени момента публикации
+future: false

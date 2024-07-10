@@ -1,0 +1,9 @@
+---
+layout: post,
+title: This is a new article
+date: {% raw %}{{ page.date | localize: "%d %B %Y" }}{% endraw %}
+category: Category
+author: User
+tags: [tag1, tag2] # Имена тегов всегда должны быть в нижнем регистре
+summary: Summary of the article
+---
