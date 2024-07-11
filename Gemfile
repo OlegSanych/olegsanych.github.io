@@ -2,9 +2,9 @@
 
 source "https://rubygems.org"
 
-gem "jekyll-theme-chirpy", "~> 7.0", ">= 7.0.1"
+gem "jekyll-theme-chirpy", "~> 7.0", ">= 7.0.1" # установка темы
 gem 'jekyll-compose', group: [:jekyll_plugins] # создание заготовки поста
-gem 'jekyll-seo-tag'
+gem 'jekyll-seo-tag' # добавляет поддержку seo тэгов
 
 group :test do
   gem "html-proofer", "~> 5.0"

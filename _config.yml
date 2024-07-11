@@ -5,7 +5,7 @@ theme: jekyll-theme-chirpy
 # в противном случае язык макета будет использовать значение по умолчанию 'en'.
 lang: ru-RU
 
-# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
+# Переключитесь на свой часовой пояс › https://kevinnovak.github.io/Time-Zone-Picker
 timezone: Europe/Moscow
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
@@ -15,41 +15,46 @@ title: Олег Казанин # the main title
 tagline: Добро пожаловать в мой блог! Здесь я делюсь своими знаниями и опытом в сфере ИТ-технологий, разбираю свои проекты, решаю проблемы. Спасибо за ваш визит! # it will display as the sub-title
 description: Добро пожаловать в мой блог! Здесь я делюсь своими знаниями и опытом в сфере ИТ-технологий, разбираю свои проекты, решаю проблемы. Спасибо за ваш визит!
 author: Олег Казанин
-# Fill in the protocol & hostname for your site.
-# e.g. 'https://username.github.io', note that it does not end with a '/'.
+# Введите протокол и имя хоста для вашего сайта.
+# например, 'https://username.github.io', обратите внимание, что оно не заканчивается на '/'.
 url: ""
 
 github:
   username: olegsanych # change to your github username
+vk:
+  username: olegsanychmsk
+telegram:
+  username: hardcode_msk
 
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
+  # Измените на свое полное имя.
+  # Оно будет отображаться в качестве автора по умолчанию и владельца авторских прав в нижнем колонтитуле
   name: Олег Казанин
   email: oakazanin@ya.ru # change to your email address
   links:
-    # The first element serves as the copyright owner's link
+    # Первый элемент служит ссылкой на владельца авторских прав
     - https://vk.com/olegsanychmsk
     - https://github.com/olegsanych
+    - https://t.me/hardcode_msk
 
-# Site Verification Settings
+# Настройки проверки сайта
 webmaster_verifications:
-  google: # fill in your Google verification code
-  yandex: # fill in your Yandex verification code
+  google: # введите проверочный код Google
+  yandex: # Введите проверочный код Яндекса
 
 # ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
+# Конец настроек `jekyll-seo-tag`.
 
-# Web Analytics Settings
+# Настройки веб-аналитики
 analytics:
   google:
     id: # fill in your Google Analytics ID
   cloudflare:
     id: # fill in your Cloudflare Web Analytics token
 
-# Pageviews settings
+# Параметры просмотра страниц
 pageviews:
-  provider: # now only supports 'goatcounter'
+  provider: # теперь поддерживается только 'goatcounter'
 
 # Предпочтительная настройка цветовой схемы.
 theme_mode: # [light | dark]
@@ -61,20 +66,20 @@ theme_mode: # [light | dark]
 # e.g. 'https://cdn.com'
 cdn:
 
-# the avatar on sidebar, support local or CORS resources
+# аватар на боковой панели, поддержка локальных или CORS-ресурсов
 avatar: assets/img/avatar_bw.webp
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
 social_preview_image: # string, local or CORS resources
 
-# boolean type, the global switch for TOC in posts.
+# # тип boolean, вкл / выкл оглавление в постах.
 toc: true
 
 comments:
-  # Global switch for the post comment system. Keeping it empty means disabled.
+  # Вкл / Выкл систему комментариев к постам. Если оставить его пустым, он будет отключен.
   provider: # [disqus | utterances | giscus]
-  # The provider options are as follows:
+  # Варианты поставщиков:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
@@ -116,7 +121,7 @@ paginate: 10
 # The base URL of your site
 baseurl: ""
 
-# ------------ The following options are not recommended to be modified ------------------
+# ------------ Не рекомендуется изменять следующие параметры ------------------
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
@@ -137,14 +142,14 @@ collections:
 
 defaults:
   - scope:
-      path: "" # An empty string here means all files in the project
+      path: "" # Пустая строка здесь означает, что все файлы в проекте
       type: posts
     values:
       layout: post
-      comments: true # Enable comments in posts.
-      toc: true # Display TOC column in posts.
-      # DO NOT modify the following parameter unless you are confident enough
-      # to update the code of all other post links in this project.
+      comments: true # Включите комментарии в постах.
+      toc: true # Отображение колонки оглавления в постах.
+      # НЕ изменяйте следующий параметр, если вы не уверены, 
+      # что сможете обновить все ссылки на посты.
       permalink: /posts/:title/
   - scope:
       path: _drafts
@@ -192,7 +197,7 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
-# ------------ My settings ------------------
+# ------------ Мои настройки ------------------
 plugins:
   - jekyll-seo-tag
 
@@ -212,7 +217,7 @@ jekyll_compose:
       sitemap: false
 
 
-permalink: /:categories/:title/
+permalink: /:categories/:title/ # Переопределяю формат URL
 
-# не публиковать посты, указанное время которых позднее времени момента публикации
+# не публиковать посты сразу, время которых ПОЗДНЕЕ времени публикации
 future: false

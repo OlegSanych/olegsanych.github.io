@@ -4,10 +4,12 @@
   icon: "fab fa-github"
 
 - type: vk
-  icon: "fa-brands fa-vk"
+  icon: "fab fa-vk"
+  url:  'https://vk.com/olegsanychmsk'
 
 - type: telegram
-  icon: "fa-brands fa-telegram"
+  icon: "fab fa-telegram"
+  url:  'https://t.me/hardcode_msk'
 
 - type: email
   icon: "fas fa-envelope"
