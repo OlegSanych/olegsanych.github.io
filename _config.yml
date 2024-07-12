@@ -57,7 +57,7 @@ pageviews:
   provider: # теперь поддерживается только 'goatcounter'
 
 # Предпочтительная настройка цветовой схемы.
-theme_mode: # [light | dark]
+theme_mode: light # [light | dark]
 
 # Конечная точка CDN для медиаресурсов.
 # Обратите внимание, что после присвоения этого адреса CDN url
