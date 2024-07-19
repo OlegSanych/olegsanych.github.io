@@ -206,13 +206,15 @@ jekyll_compose:
   default_front_matter:
     drafts:
       description:
+      author:
       image:
-      category:
+      categories:
       tags:
     posts:
       description:
+      author:
       image:
-      category:
+      categories:
       tags:
       published: false
       sitemap: false

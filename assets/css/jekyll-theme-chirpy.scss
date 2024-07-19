@@ -1,0 +1,22 @@
+---
+---
+
+@import 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Serif&display=swap');
+
+body {
+	font-family: "IBM Plex Sans", sans-serif;
+}
+header .post-desc, #search-results a,h5,h4,h3,h2,h1 {
+	font-family: "IBM Plex Sans", sans-serif;
+}
+pre, code, kbd, samp {
+	font-family: "IBM Plex Mono", monospace;
+}
