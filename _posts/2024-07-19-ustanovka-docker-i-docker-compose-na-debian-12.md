@@ -33,6 +33,8 @@ sudo apt update
 
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
+```
+```bash
 sudo sh ./get-docker.sh --dry-run
 ```
 
@@ -54,7 +56,11 @@ sudo apt install ca-certificates curl
 
 ```bash
 sudo install -m 0755 -d /etc/apt/keyrings
+```
+```bash
 sudo curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
+```
+```bash
 sudo chmod a+r /etc/apt/keyrings/docker.asc
 ```
 
