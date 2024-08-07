@@ -131,7 +131,7 @@ PING traefik.mylab.oakazanin.ru (127.0.0.1) 56(84) bytes of data.
 В приведенной выше конфигурации (docker-compose.yml) сначала опубликовали порт 80:80, который используется веб-браузером по умолчанию для http подключений и добавили `--entrypoints.http.address=:80` в параметр запуска Traefik, тем самым создав точку входа в сеть под названием `http`.
 Далее, в раздел `volumes` добавили `/var/run/docker.sock:/var/run/docker.sock:ro` чтобы Traefik смог прослушивать события Docker API, а в параметрах запуска `--providers.docker=true --providers.docker.endpoint=unix:///var/run/docker.sock` определяем подключение к Unix сокету для обмена данными между процессами на хосте.
 
-Запись вида 80:80 обозначает привязку порта 80 контейнера к порту 80 хоста, где слева порт хоста, а справа порт контейнера.
+> Запись вида 80:80 обозначает привязку порта 80 контейнера к порту 80 хоста, где слева порт хоста, а справа порт контейнера.
 {: .prompt-info }
 
 Затем создаем маршрут, в котором указываем, что сервис `dashboard` будет доступен по адресу `traefik.mylab.oakazanin.ru` используя `http` протокол. А также сервис `api`, доступный по адресу `traefik.mylab.oakazanin.ru` с префиксом `/api` используя всё тот же `http` протокол.
@@ -175,7 +175,7 @@ command:
   - "--entrypoints.http.address=:80"
   - "--providers.docker=true"
   - "--providers.docker.endpoint=unix:///var/run/docker.sock"
-``
+```
 {: file='docker-compose.yml'}
 
 ### Добавляем проверку работоспособности для сервисов
