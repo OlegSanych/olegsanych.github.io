@@ -1,18 +1,20 @@
 ---
 layout: post
 title: Установка Docker и Docker Compose на Debian 12
-description: Подробная инструкция для установки Docker и Docker Compose на Debian
-  Linux.
+description: Подробная инструкция для установки Docker и Docker Compose на Debian Linux.
 categories:
-- Debian
+- Linux
 - Docker
+- Debian
+- Ubuntu
 tags:
-- docker
 - linux
+- docker
 - debian
+- ubuntu
 date: 2024-07-19 17:14 +0300
 ---
-## Предварительные условия для установки Docker Ubuntu
+## Предварительные условия для установки Docker
 
 Прежде чем начать, необходимо включить аппаратную виртуализацию. Это относится к VT-x на Intel и AMD-V на материнских платах AMD. Это необходимо для запуска Docker.  
 На материнских платах AMD AMD-V включена по умолчанию. Однако на материнских платах Intel вам придется вручную включить VT-x в BIOS / UEFI.
