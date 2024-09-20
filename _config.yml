@@ -64,7 +64,7 @@ theme_mode: light # [light | dark]
 # будет добавлен ко всем медиаресурсам (аватар сайта, изображения постов, аудио- и видеофайлы), путь к которым начинается с '/'.
 #
 # e.g. 'https://cdn.com'
-cdn:
+cdn: https://i.yapx.ru
 
 # аватар на боковой панели, поддержка локальных или CORS-ресурсов
 avatar: assets/img/avatar_bw.webp
@@ -203,22 +203,22 @@ plugins:
   - jekyll-seo-tag
   - jekyll-relative-links
 
-jekyll_compose:
-  default_front_matter:
-    drafts:
-      description:
-      author:
-      image:
-      categories:
-      tags:
-    posts:
-      description:
-      author:
-      image:
-      categories:
-      tags:
-      published: false
-      sitemap: false
+# jekyll_compose:
+#   default_front_matter:
+#     drafts:
+#       description:
+#       author:
+#       image:
+#       categories:
+#       tags:
+#     posts:
+#       description:
+#       author:
+#       image:
+#       categories:
+#       tags:
+#       published: false
+#       sitemap: false
 
 
 permalink: /:categories/:title/ # Переопределяю формат URL
