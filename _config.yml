@@ -67,7 +67,7 @@ theme_mode: light # [light | dark]
 cdn: https://i.yapx.ru
 
 # аватар на боковой панели, поддержка локальных или CORS-ресурсов
-avatar: assets/img/avatar_bw.webp
+avatar: YAAuP.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
