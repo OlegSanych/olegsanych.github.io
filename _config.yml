@@ -202,6 +202,7 @@ jekyll-archives:
 plugins:
   - jekyll-seo-tag
   - jekyll-relative-links
+  - jekyll-sitemap
 
 # jekyll_compose:
 #   default_front_matter:

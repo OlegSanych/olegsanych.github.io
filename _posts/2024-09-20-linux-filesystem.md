@@ -5,7 +5,7 @@ description: Linux. Справочник. Иерархия файловой си
 # image: X97LH.jpg
 categories:
 - Linux
-- Справочник
+- TLDR
 tags:
 - linux
 - pocketbook

@@ -6,11 +6,10 @@ description: Команда find в Linux используется для пои
 # image: X975K.jpg
 categories:
 - Linux
-- Консольные приложения
+- Console
 tags:
 - linux
 - find
-- поиск
 - bash
 date: 2024-09-20 14:43 +0300
 ---

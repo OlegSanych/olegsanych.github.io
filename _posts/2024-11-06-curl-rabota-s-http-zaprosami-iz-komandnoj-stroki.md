@@ -4,7 +4,7 @@ title: Curl - работа с HTTP запросами из командной с
 description: Утилита curl – это мощный инструмент для работы с HTTP-запросами и взаимодействия с различными API
 categories:
 - Linux
-- Консольные приложения
+- Console
 tags:
 - linux
 - curl
