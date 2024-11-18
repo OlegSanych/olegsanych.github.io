@@ -3,7 +3,6 @@ layout: post
 title: Find - поиск файлов и директорий
 description: Команда find в Linux используется для поиска файлов и каталогов на основе
   различных критериев, таких как имя, размер, дата модификации и т.д.
-# image: X975K.jpg
 categories:
 - Linux
 - Console

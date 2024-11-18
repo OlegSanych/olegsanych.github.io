@@ -12,8 +12,8 @@ timezone: Europe/Moscow
 # ↓ --------------------------
 
 title: Олег Казанин # the main title
-tagline: Добро пожаловать в мой блог! Здесь я делюсь своими знаниями и опытом в сфере ИТ-технологий, разбираю свои проекты, решаю проблемы. Спасибо за ваш визит! # it will display as the sub-title
-description: Добро пожаловать в мой блог! Здесь я делюсь своими знаниями и опытом в сфере ИТ-технологий, разбираю свои проекты, решаю проблемы. Спасибо за ваш визит!
+tagline: Заметки и шпоры на разные ИТ темы. 
+description: Сборник заметок по администрированию Linux, установке и настройке программного обеспечения с Open Source компонентами. 
 author: Олег Казанин
 # Введите протокол и имя хоста для вашего сайта.
 # например, 'https://username.github.io', обратите внимание, что оно не заканчивается на '/'.
@@ -22,9 +22,9 @@ url: "https://oakazanin.ru"
 github:
   username: olegsanych # change to your github username
 vk:
-  username: olegsanychmsk
+  username: oakazanin
 telegram:
-  username: hardcode_msk
+  username: oa_msk
 
 social:
   # Измените на свое полное имя.
@@ -34,8 +34,8 @@ social:
   links:
     # Первый элемент служит ссылкой на владельца авторских прав
     - https://vk.com/olegsanychmsk
-    - https://github.com/olegsanych
-    - https://t.me/hardcode_msk
+    - https://github.com/oakazanin
+    - https://t.me/oa_msk
 
 # Настройки проверки сайта
 webmaster_verifications:
@@ -57,17 +57,17 @@ pageviews:
   provider: # теперь поддерживается только 'goatcounter'
 
 # Предпочтительная настройка цветовой схемы.
-theme_mode: dark # [light | dark]
+theme_mode: # [light | dark]
 
 # Конечная точка CDN для медиаресурсов.
 # Обратите внимание, что после присвоения этого адреса CDN url
 # будет добавлен ко всем медиаресурсам (аватар сайта, изображения постов, аудио- и видеофайлы), путь к которым начинается с '/'.
 #
 # e.g. 'https://cdn.com'
-cdn: https://i.yapx.ru
+# cdn: https://i.yapx.ru
 
 # аватар на боковой панели, поддержка локальных или CORS-ресурсов
-avatar: YAAuP.jpg
+avatar: assets/img/system/avatar.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -200,27 +200,7 @@ jekyll-archives:
 
 # ------------ Мои настройки ------------------
 plugins:
-  - jekyll-seo-tag
-  - jekyll-relative-links
   - jekyll-sitemap
-
-# jekyll_compose:
-#   default_front_matter:
-#     drafts:
-#       description:
-#       author:
-#       image:
-#       categories:
-#       tags:
-#     posts:
-#       description:
-#       author:
-#       image:
-#       categories:
-#       tags:
-#       published: false
-#       sitemap: false
-
 
 permalink: /:categories/:title/ # Переопределяю формат URL
 

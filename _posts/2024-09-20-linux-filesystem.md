@@ -2,7 +2,6 @@
 layout: post
 title: Linux. Файловая система
 description: Linux. Справочник. Иерархия файловой системы. Операции с файлами и каталогами
-# image: X97LH.jpg
 categories:
 - Linux
 - TLDR

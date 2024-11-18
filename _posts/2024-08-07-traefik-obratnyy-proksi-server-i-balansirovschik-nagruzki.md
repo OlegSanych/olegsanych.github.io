@@ -2,7 +2,7 @@
 layout: post
 title: Traefik v3.0 + Docker. Почти подробное руководство.
 description: Рассматривается вариант установи и настройки современного, динамического обратного прокси  Traefik.
-image: X97Mi.jpg
+image: assets/img/posts/traefik-obratnyy-proksi-server-i-balansirovschik-nagruzki/traefik_docker.jpg
 categories:
 - DevOps
 - Traefik

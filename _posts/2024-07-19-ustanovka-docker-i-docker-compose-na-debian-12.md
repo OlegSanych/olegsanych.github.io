@@ -2,7 +2,7 @@
 layout: post
 title: Установка Docker и Docker Compose на Debian 12
 description: Подробная инструкция для установки Docker и Docker Compose на Debian Linux.
-image: X97Or.jpg
+image: assets/img/posts/ustanovka-docker-i-docker-compose-na-debian-12/docker.jpg
 categories:
 - Linux
 - Docker
